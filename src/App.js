@@ -16,12 +16,16 @@ import './App.css';
 // import Inline from './components/Inline';
 // import './appStyles.css';
 // import styles from './appStyles.module.css';
-import Form from './components/Form';
+// import Form from './components/Form';
+// import LifecycleA from './components/Mounting-LifecycleA';
+import LifecycleAUpdate from './components/LifecycleAUpdate';
 
 function App() {
   return (
     <div className='App'>
-      <Form />
+      <LifecycleAUpdate />
+      {/* <LifecycleA /> */}
+      {/* <Form /> */}
       {/* <h1 className='error'>Error</h1>
       <h1 className={styles.success}>Success</h1>
       <Inline />
