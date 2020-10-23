@@ -20,12 +20,14 @@ import './App.css';
 // import LifecycleA from './components/Mounting-LifecycleA';
 // import LifecycleAUpdate from './components/LifecycleAUpdate';
 // import FragmentDemo from './components/FragmentDemo';
-import Table from './components/Table';
+// import Table from './components/Table';
+import ParentComp from './components/ParentComp';
 
 function App() {
   return (
     <div className='App'>
-      <Table />
+      <ParentComp />
+      {/* <Table /> */}
       {/* <FragmentDemo /> */}
       {/* <LifecycleAUpdate /> */}
       {/* <LifecycleA /> */}
