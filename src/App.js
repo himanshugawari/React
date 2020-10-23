@@ -22,12 +22,18 @@ import './App.css';
 // import FragmentDemo from './components/FragmentDemo';
 // import Table from './components/Table';
 // import ParentComp from './components/ParentComp';
-import ParentMemoComp from './components/ParentMemoComp';
+// import ParentMemoComp from './components/ParentMemoComp';
+// import RefsDemo from './components/RefsDemo';
+// import FocusInput from './components/FocusInput';
+import FRParentInput from './components/FRParentInput';
 
 function App() {
   return (
     <div className='App'>
-      <ParentMemoComp />
+      <FRParentInput />
+      {/* <FocusInput /> */}
+      {/* <RefsDemo /> */}
+      {/* <ParentMemoComp /> */}
       {/* <ParentComp /> */}
       {/* <Table /> */}
       {/* <FragmentDemo /> */}
