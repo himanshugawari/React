@@ -29,14 +29,33 @@ import './App.css';
 // import PortalDemo from './components/PortalDemo';
 // import Hero from './components/Hero';
 // import ErrorBoundary from './components/ErrorBoundary';
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
+// import ClickCounter from './components/ClickCounter';
+// import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import User from './components/User';
+import CounterNew from './components/CounterNew';
 
 function App() {
   return (
     <div className='App'>
-      <ClickCounter name='Himanshu' />
-      <HoverCounter />
+      <CounterNew
+        render={(count, incrementCount) => (
+          <ClickCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      />
+      <CounterNew
+        render={(count, incrementCount) => (
+          <HoverCounterTwo count={count} incrementCount={incrementCount} />
+        )}
+      />
+
+      {/* <ClickCounterTwo />
+      <HoverCounterTwo />
+      <User render={(isLoggedIn) => (isLoggedIn ? 'Himanshu' : 'Guest')} /> */}
+
+      {/* <ClickCounter name='Himanshu' />
+      <HoverCounter /> */}
       {/* <ErrorBoundary>
         <Hero heroName='Batman' />
       </ErrorBoundary>
