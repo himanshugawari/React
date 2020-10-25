@@ -31,15 +31,20 @@ import './App.css';
 // import ErrorBoundary from './components/ErrorBoundary';
 // import ClickCounter from './components/ClickCounter';
 // import HoverCounter from './components/HoverCounter';
-import ClickCounterTwo from './components/ClickCounterTwo';
-import HoverCounterTwo from './components/HoverCounterTwo';
-import User from './components/User';
-import CounterNew from './components/CounterNew';
+// import ClickCounterTwo from './components/ClickCounterTwo';
+// import HoverCounterTwo from './components/HoverCounterTwo';
+// import User from './components/User';
+// import CounterNew from './components/CounterNew';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/userContext';
 
 function App() {
   return (
     <div className='App'>
-      <CounterNew
+      <UserProvider value='Himanshu'>
+        <ComponentC />
+      </UserProvider>
+      {/* <CounterNew
         render={(count, incrementCount) => (
           <ClickCounterTwo count={count} incrementCount={incrementCount} />
         )}
@@ -48,7 +53,7 @@ function App() {
         render={(count, incrementCount) => (
           <HoverCounterTwo count={count} incrementCount={incrementCount} />
         )}
-      />
+      /> */}
 
       {/* <ClickCounterTwo />
       <HoverCounterTwo />
