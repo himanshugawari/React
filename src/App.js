@@ -35,15 +35,19 @@ import './App.css';
 // import HoverCounterTwo from './components/HoverCounterTwo';
 // import User from './components/User';
 // import CounterNew from './components/CounterNew';
-import ComponentC from './components/ComponentC';
-import { UserProvider } from './components/userContext';
+// import ComponentC from './components/ComponentC';
+// import { UserProvider } from './components/userContext';
+import PostList from './components/PostList';
+import PostForm from './components/PostForm';
 
 function App() {
   return (
     <div className='App'>
-      <UserProvider value='Himanshu'>
+      <PostForm />
+      {/* <PostList /> */}
+      {/* <UserProvider value='Himanshu'>
         <ComponentC />
-      </UserProvider>
+      </UserProvider> */}
       {/* <CounterNew
         render={(count, incrementCount) => (
           <ClickCounterTwo count={count} incrementCount={incrementCount} />
